@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var url: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        replaceFragment(HomeFragment.newInstance(),false)
+        replaceFragment(HomeFragment.newInstance(), false)
 
     }
 
